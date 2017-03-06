@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('Home');
-});
+//Home Page
+Route::get('/',array(
+    'as'=> 'ShowHomeView',
+    'uses'=>'HomeController@index'
+));
+
+Route::get('home',array(
+    'as'=> 'ShowHomeView',
+    'uses'=>'HomeController@index'
+));
+
+Route::resource('contact','ContactController',[
+    'except'=>'show'
+    ]
+);
+
+Route::get('project',array(
+    'as'=>'ShowProjectView',
+    'uses'=>'ProjectController@index'
+));
