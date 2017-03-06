@@ -20,12 +20,18 @@
         </div>
         <div class="collapse navbar-collapse" id="CollapseNav1">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a> </li>
-                <li><a href="#">Projects</a> </li>
-                <li><a href="#">Contact</a> </li>
+                <li {!! classActivePath(['/','home']) !!}><a href="http://localhost:8000/home">Home</a> </li>
+                <li {!! classActiveSegment(1,'project') !!}><a href="http://localhost:8000/project">Projects</a> </li>
+                <li {!! classActiveSegment(1,'contact') !!}><a href="http://localhost:8000/contact/create">Contact</a> </li>
             </ul>
         </div>
     </nav>
+
+    @yield('body')
+
+    <footer>
+        <p class="text-center"><small>Copyright &copy; Prasanna Deshappriya</small></p>
+    </footer>
     {{HTML::script('js/app.js')}}
 </header>
 
