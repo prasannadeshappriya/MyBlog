@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ContactController extends Controller
 {
@@ -24,6 +26,12 @@ class ContactController extends Controller
      */
     public function create()
     {
+        $a = DB::select('SELECT * FROM contact WHERE 1');
+        var_dump($a);
+        $b = json_decode(json_encode($a),true);
+        echo "----------------------------------------------";
+        var_dump($b);
+        echo $b['name'];
         //Show Contact View
         return view('Contact');
     }
@@ -34,9 +42,19 @@ class ContactController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContactRequest $request)
     {
+        $name = $request['name'];
+        $email = $request['email'];
+        $message = $request['message'];
         //
+        DB::insert(
+            'INSERT INTO contact (name,email,message) VALUES(?,?,?)',[
+                $name,
+                $email,
+                $message
+            ]
+        );
     }
 
     /**

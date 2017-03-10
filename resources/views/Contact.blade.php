@@ -61,7 +61,7 @@
                 {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
 
                 {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
-                {!! Form::control('text',6,'email',$errors,trans('front/contact.email')) !!}
+                {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
                 {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
 
                 {!! Form::submits(trans('front/contact.send'),['col-lg-12'])  !!}
