@@ -9,5 +9,6 @@ return [
     'name'=>'Your name',
     'email'=>'Your email',
     'message'=>'Message',
-    'send'=>'Post Comment'
+    'send'=>'Post Comment',
+    'text' => 'Add a comment',
 ];

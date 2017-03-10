@@ -21,7 +21,6 @@ class ContactController extends Controller
         foreach ($result as $row){
             $arrResult[] = (array)$row;
         }
-        echo $arrResult[0]['name'];
         //Show Contact View
         return view('Contact', compact('arrResult'));
     }

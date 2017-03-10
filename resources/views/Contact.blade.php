@@ -3,17 +3,64 @@
 @section('body')
     <div class="container">
         <div class="box">
-            <hr>
-                <h4 class="intro-text text-center">Contact</h4>
-            <hr>
+            @if(!empty($arrResult))
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr>
+                        <h4 class="intro-text text-center">Comments</h4>
+                        <hr>
+                    </div>
+                </div>
+                <br>
+                @foreach($arrResult as $result)
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-info">{{$result['name']}}</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>{{$result['message']}}</p>
+                                <p class="text-right"><small> -{{$result['email']}}</small> </p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                    </div>
+                </div>
+            @endif
+            <p class="text-info">&nbsp;&nbsp;&nbsp;{{trans('front/contact.text')}}:</p>
             <div class="row">
-                <p class="text-center col-lg-4"> Phone :- +94710899654</p>
-                <p class="text-center col-lg-4"> Email :- prasannadeshappriya@gmail.com</p>
-                <p class="text-center col-lg-4"> Phone :- +94710899654</p>
+                <div class="col-lg-12">
+                    {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
+
+                    {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
+                    {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
+                    {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
+
+                    {!! Form::submits(trans('front/contact.send'),['col-lg-12 text-right'])  !!}
+                    {!! Form::close() !!}
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="row">
+                    <hr>
+                    <h4 class="intro-text text-center">Contact</h4>
+                    <hr>
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row">
+                <p class="text-center col-lg-12"> Phone :- +94710899654</p>
+                <p class="text-center col-lg-12"> Email :- prasannadeshappriya@gmail.com</p>
+                <p class="text-center col-lg-12"> Phone :- +94710899654</p>
             </div>
             <br>
             <div class="col-lg-12 text-center">
-                <a href="#">
+                <a href="https://www.facebook.com/prasanna322">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                         <path id="White_2_" fill="#444444" d="M30.7,0H1.3C0.6,0,0,0.6,0,1.3v29.3C0,31.4,0.6,32,1.3,32H17V20h-4v-5h4v-4
@@ -22,7 +69,7 @@
                     </svg>
                 </a>
                 &nbsp;&nbsp;
-                <a href="#">
+                <a href="https://github.com/prasannadeshappriya">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                         <path fill-rule="evenodd" clip-rule="evenodd" fill="#444444" d="M16,0.4c-8.8,0-16,7.2-16,16c0,7.1,4.6,13.1,10.9,15.2
@@ -34,7 +81,7 @@
                     </svg>
                 </a>
                 &nbsp;&nbsp;
-                <a href="#">
+                <a href="https://twitter.com/Prasanna322?lang=en">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                         <path fill="#444444" d="M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.2,3
@@ -45,7 +92,7 @@
                     </svg>
                 </a>
                 &nbsp;&nbsp;
-                <a href="#">
+                <a href="https://www.linkedin.com/in/prasanna-deshappriya">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
                         <path fill="#444444" d="M30.7,0H1.3C0.6,0,0,0.6,0,1.3v29.3C0,31.4,0.6,32,1.3,32h29.3c0.7,0,1.3-0.6,1.3-1.3V1.3
@@ -55,45 +102,6 @@
                     </svg>
                 </a>
 
-            </div><br><br>
-
-            <br>
-            <div class="col-lg-12">
-                <div class="row">
-                    {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
-
-                    {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
-                    {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
-                    {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
-
-                    {!! Form::submits(trans('front/contact.send'),['col-lg-12'])  !!}
-                    {!! Form::close() !!}
-                </div>
-            </div>
-
-            <div class="row">
-                @if(!empty($arrResult))
-                    <div class="col-lg-12">
-                        <div class="row">
-                            <hr>
-                            <h4 class="intro-text text-center">Comments</h4>
-                            <hr>
-                        </div>
-                    </div>
-                    @foreach($arrResult as $result)
-                        <div class="col-lg-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="text-info">{{$result['name']}}</h4>
-                                </div>
-                                <div class="panel-body">
-                                    <p>{{$result['message']}}</p>
-                                    <p class="text-right"><small> -{{$result['email']}}</small> </p>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                @endif
             </div>
         </div>
     </div>
