@@ -10,7 +10,8 @@
                 <p class="text-center col-lg-4"> Phone :- +94710899654</p>
                 <p class="text-center col-lg-4"> Email :- prasannadeshappriya@gmail.com</p>
                 <p class="text-center col-lg-4"> Phone :- +94710899654</p>
-            </div><br>
+            </div>
+            <br>
             <div class="col-lg-12 text-center">
                 <a href="#">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -55,22 +56,45 @@
                 </a>
 
             </div><br><br>
+
             <br>
             <div class="col-lg-12">
+                <div class="row">
+                    {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
+
+                    {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
+                    {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
+                    {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
+
+                    {!! Form::submits(trans('front/contact.send'),['col-lg-12'])  !!}
+                    {!! Form::close() !!}
+                </div>
+            </div>
+
             <div class="row">
-                {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
-
-                {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
-                {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
-                {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
-
-                {!! Form::submits(trans('front/contact.send'),['col-lg-12'])  !!}
-                {!! Form::close() !!}
+                @if(!empty($arrResult))
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <hr>
+                            <h4 class="intro-text text-center">Comments</h4>
+                            <hr>
+                        </div>
+                    </div>
+                    @foreach($arrResult as $result)
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="text-info">{{$result['name']}}</h4>
+                                </div>
+                                <div class="panel-body">
+                                    <p>{{$result['message']}}</p>
+                                    <p class="text-right"><small> -{{$result['email']}}</small> </p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
-            </div>
-
-
-
         </div>
     </div>
 @stop

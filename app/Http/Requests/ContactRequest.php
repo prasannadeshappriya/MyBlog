@@ -12,7 +12,7 @@ class ContactRequest extends Request{
         return [
             'name'=>'required',
             'email'=>'required',
-            'message'=>'required'
+            'message'=>'required|max:10000'
         ];
     }
 

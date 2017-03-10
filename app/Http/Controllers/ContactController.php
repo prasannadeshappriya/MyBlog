@@ -15,8 +15,15 @@ class ContactController extends Controller
      */
     public function index()
     {
+        $sql = 'SELECT * FROM contact WHERE 1';
+        $result = DB::select($sql);
+        $arrResult = [];
+        foreach ($result as $row){
+            $arrResult[] = (array)$row;
+        }
+        echo $arrResult[0]['name'];
         //Show Contact View
-        return view('Contact');
+        return view('Contact', compact('arrResult'));
     }
 
     /**
@@ -26,14 +33,14 @@ class ContactController extends Controller
      */
     public function create()
     {
-        $a = DB::select('SELECT * FROM contact WHERE 1');
-        var_dump($a);
-        $b = json_decode(json_encode($a),true);
-        echo "----------------------------------------------";
-        var_dump($b);
-        echo $b['name'];
-        //Show Contact View
-        return view('Contact');
+        $sql = 'SELECT * FROM contact WHERE 1';
+        $result = DB::select($sql);
+        $arrResult = [];
+        foreach ($result as $row){
+            $arrResult[] = (array)$row;
+        }
+
+        return view('Contact', compact('arrResult'));
     }
 
     /**
@@ -55,6 +62,15 @@ class ContactController extends Controller
                 $message
             ]
         );
+
+        $sql = 'SELECT * FROM contact WHERE 1';
+        $result = DB::select($sql);
+        $arrResult = [];
+        foreach ($result as $row){
+            $arrResult[] = (array)$row;
+        }
+
+        return view('Contact', compact('arrResult'));
     }
 
     /**
