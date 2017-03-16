@@ -54,9 +54,9 @@
             </div>
             <br><br><br>
             <div class="row">
-                <p class="text-center col-lg-12"> Phone :- +94710899654</p>
+                <p class="text-center col-lg-12"> Skype :- prasanna322</p>
                 <p class="text-center col-lg-12"> Email :- prasannadeshappriya@gmail.com</p>
-                <p class="text-center col-lg-12"> Phone :- +94710899654</p>
+                <p class="text-center col-lg-12"> Phone :- +94710899654 / +94776459108</p>
             </div>
             <br>
             <div class="col-lg-12 text-center">

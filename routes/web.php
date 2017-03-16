@@ -31,3 +31,21 @@ Route::get('project',array(
     'as'=>'ShowProjectView',
     'uses'=>'ProjectController@index'
 ));
+
+
+//Admin
+Route::post('dashboard/login',array(
+    'as'=>'postLogIn',
+    'uses'=>'DashboardController@postLogIn'
+));
+
+Route::get('dashboard',array(
+    'as'=>'ViewDashboard',
+    'uses'=>'DashboardController@index'
+));
+
+Route::get('dashboard/index',array(
+    'as'=>'ViewDashboardIndex',
+    'uses'=>'DashboardController@dashboardIndex',
+    'middleware'=>'admin'
+));

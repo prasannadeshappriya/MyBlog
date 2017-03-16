@@ -6,6 +6,7 @@
  * Time: 4:26 PM
  */
 namespace App\Http\Controllers;
+
 class ProjectController extends Controller{
 
     public function index()
