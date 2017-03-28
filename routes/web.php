@@ -11,41 +11,51 @@
 |
 */
 
-//Home Page
-Route::get('/',array(
-    'as'=> 'ShowHomeView',
-    'uses'=>'HomeController@index'
-));
+Route::group(['middleware' => ['web']],function(){
 
-Route::get('home',array(
-    'as'=> 'ShowHomeView',
-    'uses'=>'HomeController@index'
-));
+    //Home Page
+    Route::get('/',array(
+        'as'=> 'ShowHomeView',
+        'uses'=>'HomeController@index'
+    ));
+    Route::get('home',array(
+        'as'=> 'ShowHomeView',
+        'uses'=>'HomeController@index'
+    ));
 
-Route::resource('contact','ContactController',[
-    'except'=>'show'
-    ]
-);
+    //Contact Page
+    Route::resource('contact','ContactController',[
+        'except'=>'show'
+        ]
+    );
 
-Route::get('project',array(
-    'as'=>'ShowProjectView',
-    'uses'=>'ProjectController@index'
-));
+    //Project Page
+    Route::get('project',array(
+        'as'=>'ShowProjectView',
+        'uses'=>'ProjectController@index'
+    ));
 
-
-//Admin
-Route::post('dashboard/login',array(
-    'as'=>'postLogIn',
-    'uses'=>'DashboardController@postLogIn'
-));
-
-Route::get('dashboard',array(
-    'as'=>'ViewDashboard',
-    'uses'=>'DashboardController@index'
-));
-
-Route::get('dashboard/index',array(
-    'as'=>'ViewDashboardIndex',
-    'uses'=>'DashboardController@dashboardIndex',
-    'middleware'=>'admin'
-));
+    //Admin Dashboard
+    Route::post('dashboard/login',array(
+        'as'=>'postLogIn',
+        'uses'=>'DashboardController@postLogIn'
+    ));
+    Route::get('dashboard',array(
+        'as'=>'ViewDashboard',
+        'uses'=>'DashboardController@index'
+    ));
+    Route::get('dashboard/logout',array(
+        'as'=>'logOutDashboard',
+        'uses'=>'DashboardController@logout'
+    ));
+    Route::get('dashboard/index',array(
+        'as'=>'ViewDashboardIndex',
+        'uses'=>'DashboardController@dashboardIndex',
+        'middleware'=>'admin'
+    ));
+    Route::post('dashboard/index/add',array(
+        'as'=>'InsertNewProject',
+        'uses' => 'DashboardController@addNewProject',
+        'middleware' => 'admin'
+    ));
+});

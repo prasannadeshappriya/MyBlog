@@ -23,6 +23,11 @@
                 <li {!! classActivePath(['/','home']) !!}><a href="http://localhost:8000/home">Home</a> </li>
                 <li {!! classActiveSegment(1,'project') !!}><a href="http://localhost:8000/project">Projects</a> </li>
                 <li {!! classActiveSegment(1,'contact') !!}><a href="http://localhost:8000/contact/create">Contact</a> </li>
+                @if(session()->has('status'))
+                    @if(session('status')==='admin')
+                        <li {!! classActiveSegment(1,'dashboard') !!}><a href="http://localhost:8000/dashboard/index">Dashboard</a> </li>
+                    @endif
+                @endif
             </ul>
         </div>
     </nav>

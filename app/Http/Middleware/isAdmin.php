@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Symfony\Component\HttpFoundation\Session\Session;
 
 class isAdmin
 {
@@ -15,11 +16,9 @@ class isAdmin
      */
     public function handle($request, Closure $next)
     {
-        if(($request->session()->get('status'))===null){
-            return redirect('dashboard');
-        }
-        if(($request->session()->get('status'))==='admin'){
-            return $next($request);;
+        $session = new Session();
+        if(($session->get('status'))==='admin'){
+            return $next($request);
         }
         return redirect('dashboard');
     }
