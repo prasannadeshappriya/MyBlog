@@ -21,6 +21,7 @@
         <div class="collapse navbar-collapse" id="CollapseNav1">
             <ul class="nav navbar-nav">
                 <li {!! classActivePath(['/','home']) !!}><a href="http://localhost:8000/home">Home</a> </li>
+                <li {!! classActiveSegment(1,'article') !!}><a href="http://localhost:8000/article">Articles</a> </li>
                 <li {!! classActiveSegment(1,'project') !!}><a href="http://localhost:8000/project">Projects</a> </li>
                 <li {!! classActiveSegment(1,'contact') !!}><a href="http://localhost:8000/contact/create">Contact</a> </li>
                 @if(session()->has('status'))

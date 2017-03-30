@@ -58,4 +58,10 @@ Route::group(['middleware' => ['web']],function(){
         'uses' => 'DashboardController@addNewProject',
         'middleware' => 'admin'
     ));
+
+    //Article Page
+    Route::get('article',array(
+        'as'=>'ViewArticlePage',
+        'uses'=>'ArticleController@index'
+    ));
 });
