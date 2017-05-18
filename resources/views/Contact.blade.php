@@ -3,48 +3,6 @@
 @section('body')
     <div class="container">
         <div class="box">
-            @if(!empty($arrResult))
-                <div class="row">
-                    <div class="col-lg-12">
-                        <hr>
-                        <h4 class="intro-text text-center">Comments</h4>
-                        <hr>
-                    </div>
-                </div>
-                <br>
-                @foreach($arrResult as $result)
-                    <div class="col-lg-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="text-info">{{$result['name']}}</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p>{{$result['message']}}</p>
-                                <p class="text-right"><small> -{{$result['email']}}</small> </p>
-                            </div>
-                        </div>
-                    </div>
-                @endforeach
-                <div class="row">
-                    <div class="col-lg-12">
-                        <br>
-                    </div>
-                </div>
-            @endif
-            <p class="text-info">&nbsp;&nbsp;&nbsp;{{trans('front/contact.text')}}:</p>
-            <div class="row">
-                <div class="col-lg-12">
-                    {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
-
-                    {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
-                    {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
-                    {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
-
-                    {!! Form::submits(trans('front/contact.send'),['col-lg-12 text-right'])  !!}
-                    {!! Form::close() !!}
-                </div>
-            </div>
-
             <div class="col-lg-12">
                 <div class="row">
                     <hr>
@@ -101,8 +59,50 @@
                             c0.6-1.2,2.2-2.5,4.5-2.5c4.8,0,5.7,3.2,5.7,7.3V27.3z"/>
                     </svg>
                 </a>
-
             </div>
+            <br><br><br>
+            @if(!empty($arrResult))
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr>
+                        <h4 class="intro-text text-center">Comments</h4>
+                        <hr>
+                    </div>
+                </div>
+                <br>
+                @foreach($arrResult as $result)
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="text-info">{{$result['name']}}</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>{{$result['message']}}</p>
+                                <p class="text-right"><small> -{{$result['email']}}</small> </p>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+                <div class="row">
+                    <div class="col-lg-12">
+                        <br>
+                    </div>
+                </div>
+            @endif
+            <p class="text-info">&nbsp;&nbsp;&nbsp;{{trans('front/contact.text')}}:</p>
+            <div class="row">
+                <div class="col-lg-12">
+                    {!! Form::open(['method'=>'post', 'url'=>'contact', 'role'=>'form']) !!}
+
+                    {!! Form::control('text',6,'name',$errors,trans('front/contact.name')) !!}
+                    {!! Form::control('email',6,'email',$errors,trans('front/contact.email')) !!}
+                    {!! Form::control('textarea',12,'message',$errors,trans('front/contact.message')) !!}
+
+                    {!! Form::submits(trans('front/contact.send'),['col-lg-12 text-right'])  !!}
+                    {!! Form::close() !!}
+                </div>
+            </div>
+
         </div>
     </div>
 @stop

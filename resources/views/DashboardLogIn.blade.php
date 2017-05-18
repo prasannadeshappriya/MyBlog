@@ -4,7 +4,7 @@
     <div class="container">
         <div class="box" style="height: 545px;">
             <div style="margin-top: 120px">
-            {!! Form::open(['url'=>'dashboard/login', 'method'=>'post', 'role'=>'form']) !!}
+                {!! Form::open(['url'=>'dashboard/login', 'method'=>'post', 'role'=>'form']) !!}
                 <div class="row">
                     @if(isset($_COOKIE['username']))
                         {!! Form::control('text','6 col-lg-offset-3','username',$errors, trans('front/dashboard.username'),$_COOKIE['username']) !!}
@@ -27,7 +27,7 @@
                         <input type="submit" value="{{trans('front/dashboard.signin')}}" class="center-block btn btn-default" style="width: 150px"/>
                     </div>
                 </div>
-            {!! Form::close() !!}
+                {!! Form::close() !!}
             </div>
         </div>
     </div>

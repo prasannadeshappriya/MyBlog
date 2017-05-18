@@ -58,6 +58,22 @@ Route::group(['middleware' => ['web']],function(){
         'uses' => 'DashboardController@addNewProject',
         'middleware' => 'admin'
     ));
+    Route::get('dashboard/token',array(
+        'as'=>'phpLaravelSessionToken',
+        'uses'=>'DashboardController@getToken'
+    ));
+    Route::post('dashboard/sync',array(
+        'as'=>'syncMobileData',
+        'uses'=>'DashboardController@startSync'
+    ));
+    Route::post('dashboard/syncdetails',array(
+        'as'=>'syncMobileData',
+        'uses'=>'DashboardController@syncDetails'
+    ));
+    Route::post('dashboard/synccourse',array(
+        'as'=>'syncMobileData',
+        'uses'=>'DashboardController@syncCourse'
+    ));
 
     //Article Page
     Route::get('article',array(

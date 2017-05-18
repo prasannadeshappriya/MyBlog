@@ -13,7 +13,7 @@
                             <div class="panel-body">
                                 <p>{{$item['description']}}</p>
                                 @if($item['learn_more']=='1')
-                                    <a href="#" class="btn btn-default center-block" style="width: 300px">Learn More</a>
+                                    <a href="#" class="btn btn-default center-block" style="width: 150px">Learn More</a>
                                 @endif
                             </div>
                         </div>

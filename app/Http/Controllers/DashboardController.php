@@ -103,4 +103,83 @@ class DashboardController extends Controller{
             ->back()
             ->with('success','Project successfully inserted');
     }
+
+    public function getToken(){
+        $response = new JsonResponse();
+        $token = csrf_token();
+        $response->setData(['_token'=>$token]);
+        return $response;
+    }
+
+    public function startSync(HttpRequest $request)
+    {
+        $user_id = $request['user_id'];
+        $first_name = $request['first_name'];
+        $last_name = $request['last_name'];
+        $full_name = $request['full_name'];
+
+        $sql = "INSERT INTO mobile_app_users (user_index,user_name,first_name,last_name) VALUES (?,?,?,?)";
+        DB::insert($sql, [
+            $user_id,
+            $full_name,
+            $first_name,
+            $last_name
+        ]);
+
+        $response = new JsonResponse();
+        $response->setData(['status' => 'Data successfully inserted']);
+        return $response;
+    }
+
+    public function syncDetails(\Illuminate\Http\Request $request){
+        $response = new JsonResponse();
+
+        $details = $request['details'];
+        $arrDetails = json_decode($details,true);
+
+        //Get the GPA value
+        $gpa = $arrDetails['gpa_object'];
+        $user_index = $arrDetails['index_number'];
+        $sql = "INSERT INTO mobile_app_users_gpa (user_index,gpa) VALUES (?,?)";
+        DB::insert($sql,[
+            $user_index,
+            $gpa
+        ]);
+
+        $sgpa = $arrDetails['sgpa_object'];
+        $sql = "INSERT INTO mobile_app_users_sgpa (user_index, semester, sgpa) VALUES(?,?,?)";
+        foreach ($sgpa as $item){
+            DB::insert($sql,[
+                $user_index,
+                $item['semester'],
+                $item['sgpa_value']
+            ]);
+        }
+
+        $response = new JsonResponse();
+        $response->setData(['status' => 'Data successfully inserted']);
+        return $response;
+    }
+
+    public function syncCourse(\Illuminate\Http\Request $request){
+        $details = $request['details'];
+        $arrDetails = json_decode($details,true);
+        $course_arr = $arrDetails['course_object'];
+
+        $sql = "INSERT INTO mobile_app_details (user_index,module_name,grade,credits,code,semester) VALUES (?,?,?,?,?,?)";
+        foreach ($course_arr as $item){
+            DB::insert($sql,[
+                $item['index'],
+                $item['name'],
+                $item['grade'],
+                $item['credits'],
+                $item['code'],
+                $item['semester']
+            ]);
+
+        }
+        $response = new JsonResponse();
+        $response->setData(['status' => 'Data successfully inserted']);
+        return $response;
+    }
 }
