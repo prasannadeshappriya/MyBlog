@@ -8,6 +8,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\ProjectAddRequest;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\HttpRequest;
 use App\Http\Requests\LoginRequest;
@@ -118,13 +119,29 @@ class DashboardController extends Controller{
         $last_name = $request['last_name'];
         $full_name = $request['full_name'];
 
-        $sql = "INSERT INTO mobile_app_users (user_index,user_name,first_name,last_name) VALUES (?,?,?,?)";
-        DB::insert($sql, [
-            $user_id,
-            $full_name,
-            $first_name,
-            $last_name
-        ]);
+        $sql = "SELECT stat_count FROM mobile_app_users WHERE user_index=?";
+        $result = DB::select($sql,[$user_id]);
+        $resultArr = [];
+
+        foreach ($result as $row){
+            $resultArr[] = (array) $row;
+        }
+
+        if(empty($resultArr)){
+            $stat_count = '1';
+            $sql = "INSERT INTO mobile_app_users (user_index,user_name,first_name,last_name,stat_count) VALUES (?,?,?,?,?)";
+            DB::insert($sql, [
+                $user_id,
+                $full_name,
+                $first_name,
+                $last_name,
+                $stat_count
+            ]);
+        }else{
+            $stat_count = (string)($resultArr[0]['stat_count']+1);
+            $sql = "UPDATE mobile_app_users SET stat_count=? WHERE user_index=?";
+            DB::update($sql,[$stat_count,$user_id]);
+        }
 
         $response = new JsonResponse();
         $response->setData(['status' => 'Data successfully inserted']);
