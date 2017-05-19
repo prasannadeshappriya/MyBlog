@@ -129,40 +129,45 @@ class DashboardController extends Controller{
 
         if(empty($resultArr)){
             $stat_count = '1';
-            $sql = "INSERT INTO mobile_app_users (user_index,user_name,first_name,last_name,stat_count) VALUES (?,?,?,?,?)";
-            DB::insert($sql, [
-                $user_id,
-                $full_name,
-                $first_name,
-                $last_name,
-                $stat_count
-            ]);
-        }else{
-            $stat_count = (string)($resultArr[0]['stat_count']+1);
-            $sql = "UPDATE mobile_app_users SET stat_count=? WHERE user_index=?";
-            DB::update($sql,[$stat_count,$user_id]);
+        }else {
+            $stat_count = (string)($resultArr[0]['stat_count'] + 1);
         }
+
+        DB::delete("DELETE FROM mobile_app_users WHERE user_index=?",[$user_id]);
+        $sql = "INSERT INTO mobile_app_users (user_index,user_name,first_name,last_name,stat_count) VALUES (?,?,?,?,?)";
+        DB::insert($sql, [
+            $user_id,
+            $full_name,
+            $first_name,
+            $last_name,
+            $stat_count
+        ]);
 
         $response = new JsonResponse();
         $response->setData(['status' => 'Data successfully inserted']);
         return $response;
     }
 
-    public function syncDetails(\Illuminate\Http\Request $request){
-        $response = new JsonResponse();
-
+    public function syncDetails(\Illuminate\Http\Request $request)
+    {
         $details = $request['details'];
-        $arrDetails = json_decode($details,true);
-
+        $arrDetails = json_decode($details, true);
+        $ret='';
         //Get the GPA value
         $gpa = $arrDetails['gpa_object'];
         $user_index = $arrDetails['index_number'];
+
+        $sql = "DELETE FROM mobile_app_users_gpa WHERE user_index=?";
+        DB::delete($sql, [$user_index]);
         $sql = "INSERT INTO mobile_app_users_gpa (user_index,gpa) VALUES (?,?)";
-        DB::insert($sql,[
+        DB::insert($sql, [
             $user_index,
             $gpa
         ]);
+        $ret=$ret.' GPA information inserted,';
 
+        $sql = "DELETE FROM mobile_app_users_sgpa WHERE user_index=?";
+        DB::delete($sql, [$user_index]);
         $sgpa = $arrDetails['sgpa_object'];
         $sql = "INSERT INTO mobile_app_users_sgpa (user_index, semester, sgpa) VALUES(?,?,?)";
         foreach ($sgpa as $item){
@@ -172,16 +177,21 @@ class DashboardController extends Controller{
                 $item['sgpa_value']
             ]);
         }
+        $ret=$ret.' SGPA information inserted';
 
         $response = new JsonResponse();
-        $response->setData(['status' => 'Data successfully inserted']);
+        $response->setData(['status' => 'Successful ['.$ret.' ]']);
         return $response;
     }
 
     public function syncCourse(\Illuminate\Http\Request $request){
         $details = $request['details'];
+        $index = $request['user_index'];
         $arrDetails = json_decode($details,true);
         $course_arr = $arrDetails['course_object'];
+
+        $sql = "DELETE FROM mobile_app_details WHERE user_index=?";
+        DB::delete($sql, [$index]);
 
         $sql = "INSERT INTO mobile_app_details (user_index,module_name,grade,credits,code,semester) VALUES (?,?,?,?,?,?)";
         foreach ($course_arr as $item){
