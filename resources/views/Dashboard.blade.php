@@ -38,6 +38,47 @@
             {!! Form::submits(trans('front/dashboard.save'),['col-lg-8 col-lg-offset-2 text-right'])  !!}
 
             {!! Form::close() !!}
+
+            @if(empty($arrUser))
+                <div class="col-lg-12">
+                <p class="text-info text-center">No statistics data available related to the moodle android application. <br> Details will be displayed as soon as they available.</p>
+                </div>
+            @else
+                <div class="row">
+                    <div class="col-lg-12">
+                        <hr>
+                        <h4 class="text-info text-center">Moodle MobileApp Statistics</h4>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Index Number</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Overall GPA</th>
+                                <th>Usage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($arrUser as $item)
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><a href="{{url('dashboard/index/view/'.$item['user_index'])}}" >{{$item['user_index']}}</a></td>
+                                    <td>{{$item['first_name']}}</td>
+                                    <td>{{$item['last_name']}}</td>
+                                    <td>{{$item['gpa']}}</td>
+                                    <td>{{$item['stat_count']}}</td>
+                                </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            @endif
         </div>
     </div>
 @stop

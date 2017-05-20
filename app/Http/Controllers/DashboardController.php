@@ -70,7 +70,25 @@ class DashboardController extends Controller{
         $session = new Session();
         $request->session()->put('status',$session->get('status'));
         $request->session()->put('username',$session->get('username'));
-        return view('Dashboard');
+
+        $sql = "SELECT * FROM mobile_app_users WHERE 1";
+        $result = DB::select($sql);
+        $arrUser = [];
+        foreach ($result as $item){
+            $arr = (array)$item;
+            $sql = "SELECT gpa FROM mobile_app_users_gpa WHERE user_index=?";
+            $gpaResult = DB::select($sql,[$arr['user_index']]);
+            $arrGpaResult = [];
+            foreach ($gpaResult as $row){
+                $arrGpaResult[]=(array)$row;
+            }
+            if(array_has($arrGpaResult,'0')){
+                $tmpArr = array('gpa'=>$arrGpaResult[0]['gpa']);
+                $arr = array_merge($arr,$tmpArr);
+            }
+            $arrUser[]=$arr;
+        }
+        return view('Dashboard',compact('arrUser'));
     }
 
     public function logout(HttpRequest $request){
@@ -208,5 +226,38 @@ class DashboardController extends Controller{
         $response = new JsonResponse();
         $response->setData(['status' => 'Data successfully inserted']);
         return $response;
+    }
+
+    public function viewUser($index = null){
+        $result = DB::select('SELECT user_name FROM mobile_app_users WHERE user_index=?',[$index]);
+        $resultArr = [];
+        foreach ($result as $item){
+            $resultArr[]=(array)$item;
+        }
+        $userDetails = $resultArr[0]['user_name'].' ['.$index.']';
+
+        $result = DB::select('SELECT * FROM mobile_app_users_sgpa WHERE user_index=?',[$index]);
+        $sgpaArr = [];
+        foreach ($result as $item){
+            $sgpaArr[]=(array)$item;
+        }
+
+        $result = DB::table('mobile_app_details')
+            ->select('*')
+            ->orderBy('semester', 'asc')
+            ->get();
+
+        $courseDetails = [];
+        $arrSem = array();
+        foreach ($result as $item){
+            $arr = (array)$item;
+            $courseDetails[]=$arr;
+            array_push($arrSem,$arr['semester']);
+        }
+
+        //Remove Duplicates
+        $arrSemester = array_unique($arrSem);
+
+        return view('DashboardView',compact('userDetails','sgpaArr','courseDetails','arrSemester'));
     }
 }

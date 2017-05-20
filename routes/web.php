@@ -53,6 +53,11 @@ Route::group(['middleware' => ['web']],function(){
         'uses'=>'DashboardController@dashboardIndex',
         'middleware'=>'admin'
     ));
+    Route::get('dashboard/index/view/{index}',array(
+        'as'=>'ViewMoodleUserInfo',
+        'uses'=>'DashboardController@viewUser',
+        'middleware'=>'admin'
+    ));
     Route::post('dashboard/index/add',array(
         'as'=>'InsertNewProject',
         'uses' => 'DashboardController@addNewProject',
