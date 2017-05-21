@@ -293,6 +293,13 @@ class ComposerStaticInit18863938d56d666bf98b69f51cad6768
                 0 => __DIR__ . '/..' . '/mobiledetect/mobiledetectlib/namespaced',
             ),
         ),
+        'C' => 
+        array (
+            'Chumper\\Zipper' => 
+            array (
+                0 => __DIR__ . '/..' . '/chumper/zipper/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -319,6 +326,7 @@ class ComposerStaticInit18863938d56d666bf98b69f51cad6768
         'App\\Http\\Requests\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/LoginRequest.php',
         'App\\Http\\Requests\\ProjectAddRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProjectAddRequest.php',
         'App\\Http\\Requests\\Request' => __DIR__ . '/../..' . '/app/Http/Requests/Request.php',
+        'App\\Providers\\AgentServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AgentServiceProvider.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -330,6 +338,11 @@ class ComposerStaticInit18863938d56d666bf98b69f51cad6768
         'Carbon\\Carbon' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Carbon.php',
         'Carbon\\CarbonInterval' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/CarbonInterval.php',
         'Carbon\\Exceptions\\InvalidDateException' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Exceptions/InvalidDateException.php',
+        'Chumper\\Zipper\\Facades\\Zipper' => __DIR__ . '/..' . '/chumper/zipper/src/Chumper/Zipper/Facades/Zipper.php',
+        'Chumper\\Zipper\\Repositories\\RepositoryInterface' => __DIR__ . '/..' . '/chumper/zipper/src/Chumper/Zipper/Repositories/RepositoryInterface.php',
+        'Chumper\\Zipper\\Repositories\\ZipRepository' => __DIR__ . '/..' . '/chumper/zipper/src/Chumper/Zipper/Repositories/ZipRepository.php',
+        'Chumper\\Zipper\\Zipper' => __DIR__ . '/..' . '/chumper/zipper/src/Chumper/Zipper/Zipper.php',
+        'Chumper\\Zipper\\ZipperServiceProvider' => __DIR__ . '/..' . '/chumper/zipper/src/Chumper/Zipper/ZipperServiceProvider.php',
         'Collective\\Html\\Componentable' => __DIR__ . '/..' . '/laravelcollective/html/src/Componentable.php',
         'Collective\\Html\\Eloquent\\FormAccessible' => __DIR__ . '/..' . '/laravelcollective/html/src/Eloquent/FormAccessible.php',
         'Collective\\Html\\FormBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/FormBuilder.php',

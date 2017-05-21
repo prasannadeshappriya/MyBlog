@@ -179,8 +179,11 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Services\Html\HtmlServiceProvider::class,
         App\Providers\AgentServiceProvider::class,
-
+        \Chumper\Zipper\ZipperServiceProvider::class,
     ],
+
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -230,6 +233,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => \Collective\Html\FormFacade::class,
         'HTML' => \Collective\Html\HtmlFacade::class,
+        'Zipper' => \Chumper\Zipper\Facades\Zipper::class,
 
     ],
 

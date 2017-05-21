@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="CollapseNav1">
             <ul class="nav navbar-nav">
                 <li {!! classActivePath(['/','home']) !!}><a href="{{url('home')}}">Home</a> </li>
-                <li {!! classActiveSegment(1,'article') !!}><a href="{{url('article')}}">Articles</a> </li>
+                <li {!! classActiveSegment(1,'article') !!}><a href="{{url('article')}}">Tutorials</a> </li>
                 <li {!! classActiveSegment(1,'project') !!}><a href="{{url('project')}}">Projects</a> </li>
                 <li {!! classActiveSegment(1,'contact') !!}><a href="{{url('contact/create')}}">Contact</a> </li>
                 @if(session()->has('status'))

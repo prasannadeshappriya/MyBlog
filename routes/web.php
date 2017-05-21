@@ -29,12 +29,6 @@ Route::group(['middleware' => ['web']],function(){
         ]
     );
 
-    //Project Page
-    Route::get('project',array(
-        'as'=>'ShowProjectView',
-        'uses'=>'ProjectController@index'
-    ));
-
     //Admin Dashboard
     Route::post('dashboard/login',array(
         'as'=>'postLogIn',
@@ -84,5 +78,23 @@ Route::group(['middleware' => ['web']],function(){
     Route::get('article',array(
         'as'=>'ViewArticlePage',
         'uses'=>'ArticleController@index'
+    ));
+    Route::get('article/{index}',array(
+        'as'=>'ViewTutorial1',
+        'uses'=>'ArticleController@viewTutorial'
+    ));
+
+    //Project Page
+    Route::get('project',array(
+        'as'=>'ShowProjectView',
+        'uses'=>'ProjectController@index'
+    ));
+    Route::get('project/{name}',array(
+        'as'=>'ShowProjectInfo',
+        'uses'=>'ProjectController@viewProject'
+    ));
+    Route::get('project/download/{name}',array(
+        'as'=>'DownloadProjectExeFiles',
+        'uses'=>'ProjectController@downloadFiles'
     ));
 });

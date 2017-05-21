@@ -10,7 +10,7 @@
                     @endif
                 </div>
                 <div class="col-lg-6 text-right">
-                    <p class="text-info"><a href="logout">Sign Out</a></p>
+                    <p class="text-info"><a href="{{url('dashboard/logout')}}">Sign Out</a></p>
                 </div>
             </div>
             <div class="row">
