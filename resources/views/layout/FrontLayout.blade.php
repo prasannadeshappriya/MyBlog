@@ -9,6 +9,7 @@
     {!! HTML::script('js/vendor/respond.min.js') !!}
     {!! HTML::style('https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js') !!}
     {!! HTML::style('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') !!}
+    <link rel="shortcut icon" href="{{asset('img/icon.png')}}">
 </head>
 <body>
 <header role="banner">
