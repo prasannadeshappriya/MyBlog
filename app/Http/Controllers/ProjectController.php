@@ -29,6 +29,7 @@ class ProjectController extends Controller{
     }
 
     public function viewProject($name=null){
+        echo $name;
         if($name == 'Mobile App Project'){
             return view('project/Project1');
         }
