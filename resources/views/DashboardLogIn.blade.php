@@ -3,10 +3,11 @@
 @section('body')
     <div class="container">
         <div class="box" style="height: 545px;">
-            <div class="col-lg-12">
-                <h4 class="text-info text-center">Log in</h4>
-            </div>
-            <div style="margin-top: 120px">
+
+            <div style="margin-top: 100px">
+                <div class="col-lg-12" style="margin-bottom: 20px">
+                    <h4 class="text-info text-center">Log in to continue</h4>
+                </div>
                 {!! Form::open(['url'=>'dashboard/login', 'method'=>'post', 'role'=>'form']) !!}
                 <div class="row">
                     @if(isset($_COOKIE['username']))
