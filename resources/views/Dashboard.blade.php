@@ -56,7 +56,10 @@
                     <table class="table table-responsive table-bordered">
                         <thead>
                             <tr>
-                                <th>#</th>
+                                @if($agent->isMobile())
+                                @else
+                                    <th>#</th>
+                                @endif
                                 <th>Index Number</th>
                                 @if($agent->isMobile())
                                     <th>Name</th>
@@ -71,7 +74,10 @@
                         <tbody>
                             @foreach($arrUser as $item)
                                 <tr>
-                                    <th scope="row">1</th>
+                                    @if($agent->isMobile())
+                                    @else
+                                        <th scope="row">1</th>
+                                    @endif
                                     <td><a href="{{url('dashboard/index/view/'.$item['user_index'])}}" >{{$item['user_index']}}</a></td>
                                     @if($agent->isMobile())
                                         <td>{{$item['first_name']}} {{$item['last_name']}}</td>
