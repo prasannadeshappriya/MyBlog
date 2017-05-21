@@ -29,13 +29,13 @@ class ProjectController extends Controller{
     }
 
     public function viewProject($name=null){
-        if($name.equalTo('Mobile App Project')){
+        if($name == 'Mobile App Project'){
             return view('project/Project1');
         }
     }
 
     public function downloadFiles($name=null){
-        if($name.equalTo('download app 1')){
+        if($name == 'download app 1'){
             $files = glob(public_path('js/*'));
             Zipper::make('mydir/MoodleMobileApp.zip')->add($files)->close();
             return response()->download(public_path('mydir/MoodleMobileApp.zip'));

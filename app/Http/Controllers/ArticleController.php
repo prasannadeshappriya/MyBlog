@@ -10,7 +10,7 @@ class ArticleController extends Controller
 
 
     public function viewTutorial($index = null){
-        if($index.equalTo('android1')) {
+        if($index == 'android1') {
             return view('article/Article1');
         }
     }
