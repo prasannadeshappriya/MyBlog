@@ -82,9 +82,13 @@ class DashboardController extends Controller{
             foreach ($gpaResult as $row){
                 $arrGpaResult[]=(array)$row;
             }
-            if(array_has($arrGpaResult,'0')){
-                $tmpArr = array('gpa'=>$arrGpaResult[0]['gpa']);
-                $arr = array_merge($arr,$tmpArr);
+            if(array_has($arrGpaResult,'0')) {
+                if (strlen($arrGpaResult[0]['gpa']) <= 6) {
+                    $tmpArr = array('gpa' => $arrGpaResult[0]['gpa']);
+                }else{
+                    $tmpArr = array('gpa' => substr($arrGpaResult[0]['gpa'],0,6));
+                }
+                $arr = array_merge($arr, $tmpArr);
             }
             $arrUser[]=$arr;
         }
@@ -239,7 +243,13 @@ class DashboardController extends Controller{
         $result = DB::select('SELECT * FROM mobile_app_users_sgpa WHERE user_index=?',[$index]);
         $sgpaArr = [];
         foreach ($result as $item){
-            $sgpaArr[]=(array)$item;
+            $tmpArr = (array)$item;
+            if(strlen($tmpArr['sgpa'])<=6) {
+                $sgpaArr[] = $tmpArr;
+            }else{
+                $tmpArr['sgpa'] = substr($tmpArr['sgpa'],0,6);
+                $sgpaArr[] = $tmpArr;
+            }
         }
 
         $result = DB::table('mobile_app_details')
