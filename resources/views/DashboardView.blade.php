@@ -55,8 +55,12 @@
                             <table class="table table-bordered table-responsive" style="margin-bottom: 50px">
                                 <thead>
                                 <tr>
-                                    <th>Code</th>
-                                    <th>Module Name</th>
+                                    @if($agent->isMobile())
+                                        <th>Module</th>
+                                    @else
+                                        <th>Code</th>
+                                        <th>Module Name</th>
+                                    @endif
                                     <th>Credit</th>
                                     <th>Grade</th>
                                 </tr>
@@ -65,8 +69,12 @@
                                 @foreach($courseDetails  as $item)
                                     @if($item['semester']==$semester)
                                         <tr>
-                                            <td width="150px">{{$item['code']}}</td>
-                                            <td width="700px">{{$item['module_name']}}</td>
+                                            @if($agent->isMobile())
+                                                <td width="700px">[{{$item['code']}}] {{$item['module_name']}}</td>
+                                            @else
+                                                <td width="150px">{{$item['code']}}</td>
+                                                <td width="700px">{{$item['module_name']}}</td>
+                                            @endif
                                             <td width="80px">{{$item['credits']}}</td>
                                             <td>{{$item['grade']}}</td>
                                         </tr>

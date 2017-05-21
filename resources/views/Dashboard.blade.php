@@ -53,13 +53,17 @@
                 </div>
 
                 <div class="col-lg-12">
-                    <table class="table">
+                    <table class="table table-responsive table-bordered">
                         <thead>
                             <tr>
                                 <th>#</th>
                                 <th>Index Number</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                @if($agent->isMobile())
+                                    <th>Name</th>
+                                @else
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                @endif
                                 <th>Overall GPA</th>
                                 <th>Usage</th>
                             </tr>
@@ -69,8 +73,12 @@
                                 <tr>
                                     <th scope="row">1</th>
                                     <td><a href="{{url('dashboard/index/view/'.$item['user_index'])}}" >{{$item['user_index']}}</a></td>
-                                    <td>{{$item['first_name']}}</td>
-                                    <td>{{$item['last_name']}}</td>
+                                    @if($agent->isMobile())
+                                        <td>{{$item['first_name']}} {{$item['last_name']}}</td>
+                                    @else
+                                        <td>{{$item['first_name']}}</td>
+                                        <td>{{$item['last_name']}}</td>
+                                    @endif
                                     <td>{{$item['gpa']}}</td>
                                     <td>{{$item['stat_count']}}</td>
                                 </tr>
