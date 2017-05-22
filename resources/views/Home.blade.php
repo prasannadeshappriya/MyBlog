@@ -5,7 +5,7 @@
         <div class="box">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="{{asset('img/myself.jpg')}}" width="280" height="300" class="img-responsive img-left"/>
+                    <img src="{{asset('img/myself.jpg')}}" width="280" height="300" class="img-responsive img-left" style="opacity: 1.0"/>
                     <br>
                     <p>
                         My name is Prasanna Deshappriya Bandara. I’m an undergraduate student from University of Moratuwa

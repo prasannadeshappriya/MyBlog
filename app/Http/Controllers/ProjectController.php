@@ -29,6 +29,10 @@ class ProjectController extends Controller{
     }
 
     public function viewProject($name=null){
+        //For heroku server
+        //  Moodle Mobile App Project
+        //For local server
+        //  Mobile App Project
         if($name == 'Moodle Mobile App Project'){
             return view('project/Project1');
         }

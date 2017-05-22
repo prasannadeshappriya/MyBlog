@@ -2,11 +2,10 @@
 
 @section('body')
     <div class="container">
-        <div class="box" style="height: 545px;">
-
+        <div class="box" style="height: 545px; background-color: rgba(229,229,229, 0.40);">
             <div style="margin-top: 100px">
                 <div class="col-lg-12" style="margin-bottom: 20px">
-                    <h4 class="text-info text-center">Log in to continue</h4>
+                    <h4 class="text-info text-center" style="color: black">Log in to continue</h4>
                 </div>
                 {!! Form::open(['url'=>'dashboard/login', 'method'=>'post', 'role'=>'form']) !!}
                 <div class="row">
