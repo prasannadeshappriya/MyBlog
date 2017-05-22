@@ -15,7 +15,7 @@
 <header role="banner">
     <div class="brand">Prasanna Deshappriya</div>
     <div class="address-bar">Software Engineer</div>
-    <nav class="navbar navbar-default" role="navigation" style="background-color: rgba(229,229,229, 0.70);">
+    <nav class="navbar navbar-default" role="navigation" style="background-color: rgba(229,229,229, 0.70); margin-bottom: 40px">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#CollapseNav1">
                 <span class="icon-bar"></span>
@@ -41,8 +41,7 @@
 
 
     @yield('body')
-
-    <footer class="footer" style="background-color: rgba(229,229,229, 0.70);">
+    <footer class="footer" style="background-color: rgba(229,229,229, 0.70); margin-top: 210px">
         <p class="text-center">
             <a href="https://www.facebook.com/prasanna322">
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
