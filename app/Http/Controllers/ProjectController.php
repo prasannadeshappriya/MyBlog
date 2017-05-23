@@ -35,6 +35,8 @@ class ProjectController extends Controller{
         //  Mobile App Project
         if($name == 'Moodle Mobile App Project'){
             return view('project/Project1');
+        }else{
+            return redirect()->back();
         }
     }
 

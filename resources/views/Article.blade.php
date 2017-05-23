@@ -32,7 +32,7 @@
                             <li class="list-group-item">Simple, fast routing engine.</li>
                             <li class="list-group-item">Powerful dependency injection container.</li>
                             <li class="list-group-item">Multiple back-ends for session and cache storage.</li>
-                            <li class="list-group-item list-group-item-info">Expressive, intuitive database ORM.</li>
+                            <li class="list-group-item">Expressive, intuitive database ORM.</li>
                             <li class="list-group-item">Database agnostic schema migrations.</li>
                             <li class="list-group-item">Robust background job processing.</li>
                             <li class="list-group-item">Real-time event broadcasting.</li>
