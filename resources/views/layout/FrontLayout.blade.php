@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <meta name="description" content="">
+    <meta name="description" content="Personal Website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Prasanna, Deshappriya, Prasanna Deshappriya, UOM, University of Moratuwa, Moodle, Moodle Mobile App, Mobile App, Android">
+    <meta name="author" content="Prasanna Deshappriya">
     <title>Prasanna Deshappriya</title>
     {{HTML::style('css/main.css')}}
     {!! HTML::script('js/vendor/respond.min.js') !!}
