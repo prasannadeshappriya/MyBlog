@@ -26,22 +26,22 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
                             <div class="item active">
-                                <img src="{{asset('img/apps/moodleapp1.png')}}" alt="Los Angeles">
+                                <img src="{{asset('img/apps/moodleapp1.png')}}" alt="">
                             </div>
                             <div class="item">
-                                <img src="{{asset('img/apps/moodleapp2.png')}}" alt="Chicago">
+                                <img src="{{asset('img/apps/moodleapp2.png')}}" alt="">
                             </div>
                             <div class="item">
-                                <img src="{{asset('img/apps/moodleapp3.png')}}" alt="New York">
+                                <img src="{{asset('img/apps/moodleapp3.png')}}" alt="">
                             </div>
                             <div class="item">
-                                <img src="{{asset('img/apps/moodleapp4.png')}}" alt="New York">
+                                <img src="{{asset('img/apps/moodleapp4.png')}}" alt="">
                             </div>
                             <div class="item">
-                                <img src="{{asset('img/apps/moodleapp5.png')}}" alt="New York">
+                                <img src="{{asset('img/apps/moodleapp5.png')}}" alt="">
                             </div>
                             <div class="item">
-                                <img src="{{asset('img/apps/moodleapp6.png')}}" alt="New York">
+                                <img src="{{asset('img/apps/moodleapp6.png')}}" alt="">
                             </div>
                         </div>
 
