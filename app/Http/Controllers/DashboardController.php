@@ -254,6 +254,7 @@ class DashboardController extends Controller{
 
         $result = DB::table('mobile_app_details')
             ->select('*')
+            ->where('user_index', $index)
             ->orderBy('semester', 'asc')
             ->get();
 
