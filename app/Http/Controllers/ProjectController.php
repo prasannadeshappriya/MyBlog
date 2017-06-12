@@ -35,8 +35,10 @@ class ProjectController extends Controller{
         //  Mobile App Project
         if($name == 'Moodle Mobile App Project') {
             return view('project/Project1');
-        }if($name == 'Train Schedule App'){
+        }if($name == 'Train Schedule App') {
             return view('project/Project2');
+        }if($name == 'Slt Usage [ADSL]'){
+            return view('project/Project3');
         }else{
             return redirect()->back();
         }
@@ -51,6 +53,10 @@ class ProjectController extends Controller{
 //            $files = glob(public_path('js/*'));
 //            Zipper::make('mydir/TrainScheduleApp.zip')->add($files)->close();
             return response()->download(public_path('mydir/TrainScheduleApp.zip'));
+        }else if($name == 'download app 3') {
+//            $files = glob(public_path('js/*'));
+//            Zipper::make('mydir/TrainScheduleApp.zip')->add($files)->close();
+            return response()->download(public_path('mydir/SLTUsageApp.zip'));
         }
     }
 }
