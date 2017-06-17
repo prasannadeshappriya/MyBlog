@@ -52,11 +52,11 @@ class ProjectController extends Controller{
         }else if($name == 'download app 2'){
 //            $files = glob(public_path('js/*'));
 //            Zipper::make('mydir/TrainScheduleApp.zip')->add($files)->close();
-            return response()->download(public_path('mydir/TrainScheduleApp.zip'));
+            return response()->download(public_path('mydir/TrainScheduleApp.apk'));
         }else if($name == 'download app 3') {
 //            $files = glob(public_path('js/*'));
 //            Zipper::make('mydir/TrainScheduleApp.zip')->add($files)->close();
-            return response()->download(public_path('mydir/SLTUsageApp.zip'));
+            return response()->download(public_path('mydir/SLT-Usage.apk'));
         }
     }
 }
