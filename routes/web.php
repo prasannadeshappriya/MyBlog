@@ -55,7 +55,7 @@ Route::group(['middleware' => ['web']],function(){
     Route::post('dashboard/index/add',array(
         'as'=>'InsertNewProject',
         'uses' => 'DashboardController@addNewProject',
-        'middleware' => 'admin'
+        'middleware'=>'admin'
     ));
     Route::get('dashboard/token',array(
         'as'=>'phpLaravelSessionToken',

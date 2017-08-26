@@ -72,8 +72,10 @@ class DashboardController extends Controller{
         $request->session()->put('username',$session->get('username'));
 
         $sql = "SELECT * FROM mobile_app_users WHERE 1";
+
         $result = DB::select($sql);
         $arrUser = [];
+
         foreach ($result as $item){
             $arr = (array)$item;
             $sql = "SELECT gpa FROM mobile_app_users_gpa WHERE user_index=?";
@@ -82,16 +84,20 @@ class DashboardController extends Controller{
             foreach ($gpaResult as $row){
                 $arrGpaResult[]=(array)$row;
             }
+
             if(array_has($arrGpaResult,'0')) {
-                if (strlen($arrGpaResult[0]['gpa']) <= 6) {
-                    $tmpArr = array('gpa' => $arrGpaResult[0]['gpa']);
-                }else{
-                    $tmpArr = array('gpa' => substr($arrGpaResult[0]['gpa'],0,6));
+                if(!$arrGpaResult[0]['gpa']==="NaN") {
+                    if (strlen($arrGpaResult[0]['gpa']) <= 6) {
+                        $tmpArr = array('gpa' => $arrGpaResult[0]['gpa']);
+                    } else {
+                        $tmpArr = array('gpa' => substr($arrGpaResult[0]['gpa'], 0, 6));
+                    }
+                    $arr = array_merge($arr, $tmpArr);
                 }
-                $arr = array_merge($arr, $tmpArr);
             }
             $arrUser[]=$arr;
         }
+        dd($arrUser);
         return view('Dashboard',compact('arrUser'));
     }
 
