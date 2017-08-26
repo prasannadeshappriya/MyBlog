@@ -74,8 +74,9 @@ class DashboardController extends Controller{
         $sql = "SELECT * FROM mobile_app_users WHERE 1";
 
         $result = DB::select($sql);
-        $arrUser = [];
+        $arrUser = []; $index = 0;
         foreach ($result as $item){
+            $index++;
             $arr = (array)$item;
             $sql = "SELECT gpa FROM mobile_app_users_gpa WHERE user_index=?";
             $gpaResult = DB::select($sql,[$arr['user_index']]);
@@ -87,16 +88,16 @@ class DashboardController extends Controller{
             if(array_has($arrGpaResult,'0')) {
                 if($arrGpaResult[0]['gpa']!=="NaN") {
                     if (strlen($arrGpaResult[0]['gpa']) <= 6) {
-                        $tmpArr = array('gpa' => $arrGpaResult[0]['gpa']);
+                        $tmpArr = array('gpa' => $arrGpaResult[0]['gpa'], 'index' => $index);
                     } else {
-                        $tmpArr = array('gpa' => substr($arrGpaResult[0]['gpa'], 0, 6));
+                        $tmpArr = array('gpa' => substr($arrGpaResult[0]['gpa'], 0, 6), 'index' => $index);
                     }
                 }else{
-                    $tmpArr = array('gpa' => '0.0');
+                    $tmpArr = array('gpa' => '0.0', 'index' => $index);
                 }
 
             }else{
-                $tmpArr = array('gpa' => '0.0');
+                $tmpArr = array('gpa' => '0.0', 'index' => $index);
             }
             $arr = array_merge($arr, $tmpArr);
             $arrUser[]=$arr;

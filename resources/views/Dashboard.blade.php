@@ -76,7 +76,7 @@
                                 <tr>
                                     @if($agent->isMobile())
                                     @else
-                                        <th scope="row">1</th>
+                                        <th scope="row">{{$item['index']}}</th>
                                     @endif
                                     <td><a href="{{url('dashboard/index/view/'.$item['user_index'])}}" >{{$item['user_index']}}</a></td>
                                     @if($agent->isMobile())
