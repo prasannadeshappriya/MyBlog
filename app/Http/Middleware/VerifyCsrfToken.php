@@ -14,6 +14,7 @@ class VerifyCsrfToken extends BaseVerifier
     protected $except = [
         'dashboard/sync',
         'dashboard/syncdetails',
-        'dashboard/synccourse'
+        'dashboard/synccourse',
+        'dashboard/getBackupData'
     ];
 }

@@ -73,6 +73,10 @@ Route::group(['middleware' => ['web']],function(){
         'as'=>'syncMobileData',
         'uses'=>'DashboardController@syncCourse'
     ));
+    Route::post('dashboard/getBackupData',array(
+        'as'=>'getBackupData',
+        'uses'=>'DashboardController@getBackupData'
+    ));
 
     //Article Page
     Route::get('article',array(

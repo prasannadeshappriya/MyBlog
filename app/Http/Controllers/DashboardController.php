@@ -113,6 +113,22 @@ class DashboardController extends Controller{
         return redirect('dashboard');
     }
 
+    public function getBackupData(HttpRequest $request){
+        $user_id = $request['user_id'];
+
+        $sql = "SELECT module_name, grade, credits, code, semester FROM mobile_app_details WHERE user_index=?";
+        $result = DB::select($sql,[$user_id]);
+        $resultArr = [];
+
+        foreach ($result as $row){
+            $resultArr[] = (array) $row;
+        }
+
+        $response = new JsonResponse();
+        $response->setData(['data' => $resultArr]);
+        return $response;
+    }
+
     public function addNewProject(ProjectAddRequest $request){
         $sql = 'SELECT COUNT(*) FROM projects WHERE name=?';
         $result = DB::select($sql,[$request->get('name')]);
