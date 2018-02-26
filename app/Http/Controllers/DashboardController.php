@@ -68,9 +68,12 @@ class DashboardController extends Controller{
     }
 
     public function dashboardIndex(HttpRequest $request){
-        $session = new Session();
-        $request->session()->put('status',$session->get('status'));
-        $request->session()->put('username',$session->get('username'));
+//        $session = new Session();
+//        $request->session()->put('status',$session->get('status'));
+//        $request->session()->put('username',$session->get('username'));
+
+        $request->session()->put('status',Session()->get('status'));
+        $request->session()->put('username',Session()->get('username'));
 
         $sql = "SELECT * FROM mobile_app_users WHERE 1";
 
@@ -107,6 +110,7 @@ class DashboardController extends Controller{
     }
 
     public function logout(HttpRequest $request){
+        $test = Session()->
         $session = new Session();
         $session->clear();
         $request->session()->flush();
