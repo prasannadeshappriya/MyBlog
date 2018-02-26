@@ -245,15 +245,17 @@ class DashboardController extends Controller{
 
         $sql = "INSERT INTO mobile_app_details (user_index,module_name,grade,credits,code,semester) VALUES (?,?,?,?,?,?)";
         foreach ($course_arr as $item){
-            DB::insert($sql,[
-                $item['index'],
-                $item['name'],
-                $item['grade'],
-                $item['credits'],
-                $item['code'],
-                $item['semester']
-            ]);
-
+            $grade = str_replace(" ","",$item['grade']);
+            if($grade!="") {
+                DB::insert($sql, [
+                    $item['index'],
+                    $item['name'],
+                    $item['grade'],
+                    $item['credits'],
+                    $item['code'],
+                    $item['semester']
+                ]);
+            }
         }
         $response = new JsonResponse();
         $response->setData(['status' => 'Data successfully inserted']);
