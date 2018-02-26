@@ -17,8 +17,7 @@ use Symfony\Component\HttpFoundation\Session\Session;
 class DashboardController extends Controller{
 
     public function index(HttpRequest $request){
-        $session = new Session();
-        if ($session->get('status')==='admin'){
+        if (Session()->get('status')==='admin'){
             return redirect('dashboard/index');
         }
         return view('DashboardLogIn');
@@ -110,9 +109,7 @@ class DashboardController extends Controller{
     }
 
     public function logout(HttpRequest $request){
-        $test = Session()->
-        $session = new Session();
-        $session->clear();
+        Session()->clear();
         $request->session()->flush();
         setcookie('username','',-1);
         return redirect('dashboard');
