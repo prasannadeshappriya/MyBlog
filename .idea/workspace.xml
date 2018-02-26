@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bf6ca4-33b5-4a80-9887-2786d6852f67" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,29 +41,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-872">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="264">
+              <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
               <folding>
-                <marker date="1519640016510" expanded="true" signature="805:854" ph="SELECT usern... user" />
-                <marker date="1519640016510" expanded="true" signature="2458:2496" ph="SELECT * FRO... mobile_app_users" />
-                <marker date="1519640016510" expanded="true" signature="2682:2737" ph="SELECT gpa F... mobile_app_users_gpa" />
-                <marker date="1519640016510" expanded="true" signature="4062:4155" ph="SELECT modul... mobile_app_details" />
-                <marker date="1519640016510" expanded="true" signature="4522:4564" ph="SELECT COUNT... projects" />
-                <marker date="1519640016510" expanded="true" signature="4987:5052" ph="INSERT INTO projects... " />
-                <marker date="1519640016510" expanded="true" signature="5775:5833" ph="SELECT stat_... mobile_app_users" />
-                <marker date="1519640016510" expanded="true" signature="6174:6221" ph="DELETE FROM " />
-                <marker date="1519640016510" expanded="true" signature="6252:6354" ph="INSERT INTO mobile_app_users... " />
-                <marker date="1519640016510" expanded="true" signature="6980:7031" ph="DELETE FROM " />
-                <marker date="1519640016510" expanded="true" signature="7091:7153" ph="INSERT INTO mobile_app_users_gpa... " />
-                <marker date="1519640016510" expanded="true" signature="7302:7354" ph="DELETE FROM " />
-                <marker date="1519640016510" expanded="true" signature="7458:7534" ph="INSERT INTO mobile_app_users_sgpa... " />
-                <marker date="1519640016510" expanded="true" signature="8184:8233" ph="DELETE FROM " />
-                <marker date="1519640016510" expanded="true" signature="8289:8393" ph="INSERT INTO mobile_app_details... " />
-                <marker date="1519640016510" expanded="true" signature="8907:8964" ph="SELECT user_... mobile_app_users" />
-                <marker date="1519640016510" expanded="true" signature="9185:9239" ph="SELECT * FRO... mobile_app_users_sgpa" />
+                <element signature="e#123#163#0#PHP" expanded="true" />
+                <marker date="1519643133986" expanded="true" signature="847:896" ph="SELECT usern... user" />
+                <marker date="1519643133986" expanded="true" signature="2500:2538" ph="SELECT * FRO... mobile_app_users" />
+                <marker date="1519643133986" expanded="true" signature="2724:2779" ph="SELECT gpa F... mobile_app_users_gpa" />
+                <marker date="1519643133986" expanded="true" signature="4104:4197" ph="SELECT modul... mobile_app_details" />
+                <marker date="1519643133986" expanded="true" signature="4564:4606" ph="SELECT COUNT... projects" />
+                <marker date="1519643133986" expanded="true" signature="5029:5094" ph="INSERT INTO projects... " />
+                <marker date="1519643133986" expanded="true" signature="5817:5875" ph="SELECT stat_... mobile_app_users" />
+                <marker date="1519643133986" expanded="true" signature="6216:6263" ph="DELETE FROM " />
+                <marker date="1519643133986" expanded="true" signature="6294:6396" ph="INSERT INTO mobile_app_users... " />
+                <marker date="1519643133986" expanded="true" signature="7022:7073" ph="DELETE FROM " />
+                <marker date="1519643133986" expanded="true" signature="7133:7195" ph="INSERT INTO mobile_app_users_gpa... " />
+                <marker date="1519643133986" expanded="true" signature="7344:7396" ph="DELETE FROM " />
+                <marker date="1519643133986" expanded="true" signature="7500:7576" ph="INSERT INTO mobile_app_users_sgpa... " />
+                <marker date="1519643133986" expanded="true" signature="8226:8275" ph="DELETE FROM " />
+                <marker date="1519643133986" expanded="true" signature="8331:8435" ph="INSERT INTO mobile_app_details... " />
+                <marker date="1519643133986" expanded="true" signature="8949:9006" ph="SELECT user_... mobile_app_users" />
+                <marker date="1519643133986" expanded="true" signature="9227:9281" ph="SELECT * FRO... mobile_app_users_sgpa" />
               </folding>
             </state>
           </provider>
@@ -118,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NativeSessionStorage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NativeSessionStorage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -209,11 +211,11 @@
         <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
         <option value="$PROJECT_DIR$/resources/views/Dashboard.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" />
       </list>
     </option>
   </component>
@@ -487,16 +489,16 @@
       <workItem from="1503757191727" duration="3903000" />
       <workItem from="1514122629472" duration="658000" />
       <workItem from="1514169780869" duration="726000" />
-      <workItem from="1519640126825" duration="2664000" />
+      <workItem from="1519640126825" duration="2879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146128000" />
+    <option name="totallyTimeSpent" value="146343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -505,7 +507,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23149236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23149236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -874,32 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-872">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <marker date="1519640016510" expanded="true" signature="805:854" ph="SELECT usern... user" />
-            <marker date="1519640016510" expanded="true" signature="2458:2496" ph="SELECT * FRO... mobile_app_users" />
-            <marker date="1519640016510" expanded="true" signature="2682:2737" ph="SELECT gpa F... mobile_app_users_gpa" />
-            <marker date="1519640016510" expanded="true" signature="4062:4155" ph="SELECT modul... mobile_app_details" />
-            <marker date="1519640016510" expanded="true" signature="4522:4564" ph="SELECT COUNT... projects" />
-            <marker date="1519640016510" expanded="true" signature="4987:5052" ph="INSERT INTO projects... " />
-            <marker date="1519640016510" expanded="true" signature="5775:5833" ph="SELECT stat_... mobile_app_users" />
-            <marker date="1519640016510" expanded="true" signature="6174:6221" ph="DELETE FROM " />
-            <marker date="1519640016510" expanded="true" signature="6252:6354" ph="INSERT INTO mobile_app_users... " />
-            <marker date="1519640016510" expanded="true" signature="6980:7031" ph="DELETE FROM " />
-            <marker date="1519640016510" expanded="true" signature="7091:7153" ph="INSERT INTO mobile_app_users_gpa... " />
-            <marker date="1519640016510" expanded="true" signature="7302:7354" ph="DELETE FROM " />
-            <marker date="1519640016510" expanded="true" signature="7458:7534" ph="INSERT INTO mobile_app_users_sgpa... " />
-            <marker date="1519640016510" expanded="true" signature="8184:8233" ph="DELETE FROM " />
-            <marker date="1519640016510" expanded="true" signature="8289:8393" ph="INSERT INTO mobile_app_details... " />
-            <marker date="1519640016510" expanded="true" signature="8907:8964" ph="SELECT user_... mobile_app_users" />
-            <marker date="1519640016510" expanded="true" signature="9185:9239" ph="SELECT * FRO... mobile_app_users_sgpa" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-158">
@@ -913,6 +889,33 @@
         <state relative-caret-position="270">
           <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+          <folding>
+            <element signature="e#123#163#0#PHP" expanded="true" />
+            <marker date="1519643133986" expanded="true" signature="847:896" ph="SELECT usern... user" />
+            <marker date="1519643133986" expanded="true" signature="2500:2538" ph="SELECT * FRO... mobile_app_users" />
+            <marker date="1519643133986" expanded="true" signature="2724:2779" ph="SELECT gpa F... mobile_app_users_gpa" />
+            <marker date="1519643133986" expanded="true" signature="4104:4197" ph="SELECT modul... mobile_app_details" />
+            <marker date="1519643133986" expanded="true" signature="4564:4606" ph="SELECT COUNT... projects" />
+            <marker date="1519643133986" expanded="true" signature="5029:5094" ph="INSERT INTO projects... " />
+            <marker date="1519643133986" expanded="true" signature="5817:5875" ph="SELECT stat_... mobile_app_users" />
+            <marker date="1519643133986" expanded="true" signature="6216:6263" ph="DELETE FROM " />
+            <marker date="1519643133986" expanded="true" signature="6294:6396" ph="INSERT INTO mobile_app_users... " />
+            <marker date="1519643133986" expanded="true" signature="7022:7073" ph="DELETE FROM " />
+            <marker date="1519643133986" expanded="true" signature="7133:7195" ph="INSERT INTO mobile_app_users_gpa... " />
+            <marker date="1519643133986" expanded="true" signature="7344:7396" ph="DELETE FROM " />
+            <marker date="1519643133986" expanded="true" signature="7500:7576" ph="INSERT INTO mobile_app_users_sgpa... " />
+            <marker date="1519643133986" expanded="true" signature="8226:8275" ph="DELETE FROM " />
+            <marker date="1519643133986" expanded="true" signature="8331:8435" ph="INSERT INTO mobile_app_details... " />
+            <marker date="1519643133986" expanded="true" signature="8949:9006" ph="SELECT user_... mobile_app_users" />
+            <marker date="1519643133986" expanded="true" signature="9227:9281" ph="SELECT * FRO... mobile_app_users_sgpa" />
+          </folding>
         </state>
       </provider>
     </entry>

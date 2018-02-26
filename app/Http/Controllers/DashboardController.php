@@ -12,7 +12,8 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use App\Http\Requests\HttpRequest;
 use App\Http\Requests\LoginRequest;
-use Symfony\Component\HttpFoundation\Session\Session;
+use Illuminate\Support\Facades\Session;
+//use Symfony\Component\HttpFoundation\Session\Session;
 
 class DashboardController extends Controller{
     public function index(HttpRequest $request){
