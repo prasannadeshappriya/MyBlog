@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7bf6ca4-33b5-4a80-9887-2786d6852f67" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyBlog.iml" afterPath="$PROJECT_DIR$/.idea/MyBlog.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.php" afterPath="$PROJECT_DIR$/config/database.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" afterPath="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -120,11 +109,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NativeSessionStorage.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-946">
+              <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -215,6 +214,7 @@
         <option value="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" />
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/config/database.php" />
+        <option value="$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php" />
       </list>
     </option>
   </component>
@@ -305,7 +305,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/bin/node" />
-    <property name="SearchEverywhereHistoryKey" value="appse&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;data&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;databa&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;ppser&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;database&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;appS&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;app&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;da&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;dat&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;appc&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/public/css/app.css&#10;respond&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/respond.min.js&#10;app.php&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;datab&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;App&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;ata&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;AppSer&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;apps&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;database.php&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Http/Controllers/DashboardController.php&#10;AppServiceProv&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;AppServ&#9;null&#9;null&#10;database.ph&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;clos&#9;null&#9;null&#10;closure&#9;null&#9;null&#10;Closure&#9;null&#9;null&#10;Connector.php&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php&#10;h&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/vendor/laravelcollective/html/src/HtmlServiceProvider.php" />
+    <property name="SearchEverywhereHistoryKey" value="NativeSessionStorage.php&#9;FILE&#9;file://G:/Development/PHP/MyBlog/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php&#10;appse&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;data&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;databa&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;ppser&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;database&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;appS&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;app&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;da&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;dat&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;appc&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/public/css/app.css&#10;respond&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/vendor/phpunit/php-code-coverage/src/Report/Html/Renderer/Template/js/respond.min.js&#10;app.php&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;datab&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;App&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;ata&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;AppSer&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;apps&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;database.php&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Http/Controllers/DashboardController.php&#10;AppServiceProv&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/app/Providers/AppServiceProvider.php&#10;AppServ&#9;null&#9;null&#10;database.ph&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/config/database.php&#10;clos&#9;null&#9;null&#10;closure&#9;null&#9;null&#10;Closure&#9;null&#9;null&#10;Connector.php&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php&#10;h&#9;FILE&#9;file:///home/prasanna/htdocs/MyBlog/vendor/laravelcollective/html/src/HtmlServiceProvider.php" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -434,16 +434,16 @@
       <workItem from="1503757191727" duration="3903000" />
       <workItem from="1514122629472" duration="658000" />
       <workItem from="1514169780869" duration="726000" />
-      <workItem from="1519640126825" duration="1423000" />
+      <workItem from="1519640126825" duration="2131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144887000" />
+    <option name="totallyTimeSpent" value="145595000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -452,7 +452,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23149236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23149236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -485,13 +485,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/lang/en/front/contact.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -853,8 +846,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/http-foundation/Session/Storage/NativeSessionStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-946">
+          <caret line="99" column="10" selection-start-line="99" selection-start-column="10" selection-end-line="99" selection-end-column="10" />
           <folding />
         </state>
       </provider>
