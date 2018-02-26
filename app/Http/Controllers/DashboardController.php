@@ -15,6 +15,7 @@ use App\Http\Requests\LoginRequest;
 use Symfony\Component\HttpFoundation\Session\Session;
 
 class DashboardController extends Controller{
+
     public function index(HttpRequest $request){
         $session = new Session();
         if ($session->get('status')==='admin'){
