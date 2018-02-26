@@ -240,13 +240,17 @@ class DashboardController extends Controller{
         $arrDetails = json_decode($details,true);
         $course_arr = $arrDetails['course_object'];
 
-        $sql = "DELETE FROM mobile_app_details WHERE user_index=?";
-        DB::delete($sql, [$index]);
-
         $sql = "INSERT INTO mobile_app_details (user_index,module_name,grade,credits,code,semester) VALUES (?,?,?,?,?,?)";
+        $delete_sql_command = "DELETE FROM mobile_app_details WHERE 
+                                  user_index=? AND code=?";
         foreach ($course_arr as $item){
             $grade = str_replace(" ","",$item['grade']);
             if($grade!="") {
+                DB::delete($delete_sql_command, [
+                    $index,
+                    $item['code']
+                ]);
+
                 DB::insert($sql, [
                     $item['index'],
                     $item['name'],

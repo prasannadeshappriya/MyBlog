@@ -44,27 +44,29 @@
       <file leaf-file-name="DashboardController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="248" column="24" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
+            <state relative-caret-position="206">
+              <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
               <folding>
                 <element signature="e#123#163#0#PHP" expanded="true" />
-                <marker date="1519649342147" expanded="true" signature="773:822" ph="SELECT usern... user" />
-                <marker date="1519649342147" expanded="true" signature="2575:2613" ph="SELECT * FRO... mobile_app_users" />
-                <marker date="1519649342147" expanded="true" signature="2799:2854" ph="SELECT gpa F... mobile_app_users_gpa" />
-                <marker date="1519649342147" expanded="true" signature="4146:4239" ph="SELECT modul... mobile_app_details" />
-                <marker date="1519649342147" expanded="true" signature="4606:4648" ph="SELECT COUNT... projects" />
-                <marker date="1519649342147" expanded="true" signature="5071:5136" ph="INSERT INTO projects... " />
-                <marker date="1519649342147" expanded="true" signature="5859:5917" ph="SELECT stat_... mobile_app_users" />
-                <marker date="1519649342147" expanded="true" signature="6258:6305" ph="DELETE FROM " />
-                <marker date="1519649342147" expanded="true" signature="6336:6438" ph="INSERT INTO mobile_app_users... " />
-                <marker date="1519649342147" expanded="true" signature="7064:7115" ph="DELETE FROM " />
-                <marker date="1519649342147" expanded="true" signature="7175:7237" ph="INSERT INTO mobile_app_users_gpa... " />
-                <marker date="1519649342147" expanded="true" signature="7386:7438" ph="DELETE FROM " />
-                <marker date="1519649342147" expanded="true" signature="7542:7618" ph="INSERT INTO mobile_app_users_sgpa... " />
-                <marker date="1519649342147" expanded="true" signature="8268:8317" ph="DELETE FROM " />
-                <marker date="1519649342147" expanded="true" signature="8373:8477" ph="INSERT INTO mobile_app_details... " />
-                <marker date="1519649342147" expanded="true" signature="9123:9180" ph="SELECT user_... mobile_app_users" />
-                <marker date="1519649342147" expanded="true" signature="9401:9455" ph="SELECT * FRO... mobile_app_users_sgpa" />
+                <marker date="1519650181149" expanded="true" signature="773:822" ph="SELECT usern... user" />
+                <marker date="1519650181149" expanded="true" signature="2575:2613" ph="SELECT * FRO... mobile_app_users" />
+                <marker date="1519650181149" expanded="true" signature="2799:2854" ph="SELECT gpa F... mobile_app_users_gpa" />
+                <marker date="1519650181149" expanded="true" signature="4146:4239" ph="SELECT modul... mobile_app_details" />
+                <marker date="1519650181149" expanded="true" signature="4606:4648" ph="SELECT COUNT... projects" />
+                <marker date="1519650181149" expanded="true" signature="5071:5136" ph="INSERT INTO projects... " />
+                <marker date="1519650181149" expanded="true" signature="5859:5917" ph="SELECT stat_... mobile_app_users" />
+                <marker date="1519650181149" expanded="true" signature="6258:6305" ph="DELETE FROM " />
+                <marker date="1519650181149" expanded="true" signature="6336:6438" ph="INSERT INTO mobile_app_users... " />
+                <marker date="1519650181149" expanded="true" signature="7064:7115" ph="DELETE FROM " />
+                <marker date="1519650181149" expanded="true" signature="7175:7237" ph="INSERT INTO mobile_app_users_gpa... " />
+                <marker date="1519650181149" expanded="true" signature="7386:7438" ph="DELETE FROM " />
+                <marker date="1519650181149" expanded="true" signature="7542:7618" ph="INSERT INTO mobile_app_users_sgpa... " />
+                <marker date="1519650181149" expanded="true" signature="8268:8372" ph="INSERT INTO mobile_app_details... " />
+                <marker date="1519650181149" expanded="true" signature="8406:8442" ph="INSERT INTO mobile_app_details... " />
+                <marker date="1519650181149" expanded="true" signature="8406:8501" ph="DELETE FROM " />
+                <marker date="1519650181149" expanded="true" signature="8406:8577" ph="INSERT INTO mobile_app_details... " />
+                <marker date="1519650181149" expanded="true" signature="9280:9337" ph="SELECT user_... mobile_app_users" />
+                <marker date="1519650181149" expanded="true" signature="9558:9612" ph="SELECT * FRO... mobile_app_users_sgpa" />
               </folding>
             </state>
           </provider>
@@ -93,8 +95,8 @@
       <file leaf-file-name="VerifyCsrfToken.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="198">
+              <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -522,16 +524,16 @@
       <workItem from="1503757191727" duration="3903000" />
       <workItem from="1514122629472" duration="658000" />
       <workItem from="1514169780869" duration="726000" />
-      <workItem from="1519640126825" duration="5769000" />
+      <workItem from="1519640126825" duration="6594000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149233000" />
+    <option name="totallyTimeSpent" value="150058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21160042" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -540,7 +542,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2498618" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23149236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23149236" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -853,14 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1408">
@@ -893,14 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -925,29 +911,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="63" selection-start-line="9" selection-start-column="63" selection-end-line="9" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/DashboardController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="248" column="24" selection-start-line="248" selection-start-column="24" selection-end-line="248" selection-end-column="24" />
+        <state relative-caret-position="206">
+          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
           <folding>
             <element signature="e#123#163#0#PHP" expanded="true" />
-            <marker date="1519649342147" expanded="true" signature="773:822" ph="SELECT usern... user" />
-            <marker date="1519649342147" expanded="true" signature="2575:2613" ph="SELECT * FRO... mobile_app_users" />
-            <marker date="1519649342147" expanded="true" signature="2799:2854" ph="SELECT gpa F... mobile_app_users_gpa" />
-            <marker date="1519649342147" expanded="true" signature="4146:4239" ph="SELECT modul... mobile_app_details" />
-            <marker date="1519649342147" expanded="true" signature="4606:4648" ph="SELECT COUNT... projects" />
-            <marker date="1519649342147" expanded="true" signature="5071:5136" ph="INSERT INTO projects... " />
-            <marker date="1519649342147" expanded="true" signature="5859:5917" ph="SELECT stat_... mobile_app_users" />
-            <marker date="1519649342147" expanded="true" signature="6258:6305" ph="DELETE FROM " />
-            <marker date="1519649342147" expanded="true" signature="6336:6438" ph="INSERT INTO mobile_app_users... " />
-            <marker date="1519649342147" expanded="true" signature="7064:7115" ph="DELETE FROM " />
-            <marker date="1519649342147" expanded="true" signature="7175:7237" ph="INSERT INTO mobile_app_users_gpa... " />
-            <marker date="1519649342147" expanded="true" signature="7386:7438" ph="DELETE FROM " />
-            <marker date="1519649342147" expanded="true" signature="7542:7618" ph="INSERT INTO mobile_app_users_sgpa... " />
-            <marker date="1519649342147" expanded="true" signature="8268:8317" ph="DELETE FROM " />
-            <marker date="1519649342147" expanded="true" signature="8373:8477" ph="INSERT INTO mobile_app_details... " />
-            <marker date="1519649342147" expanded="true" signature="9123:9180" ph="SELECT user_... mobile_app_users" />
-            <marker date="1519649342147" expanded="true" signature="9401:9455" ph="SELECT * FRO... mobile_app_users_sgpa" />
+            <marker date="1519650181149" expanded="true" signature="773:822" ph="SELECT usern... user" />
+            <marker date="1519650181149" expanded="true" signature="2575:2613" ph="SELECT * FRO... mobile_app_users" />
+            <marker date="1519650181149" expanded="true" signature="2799:2854" ph="SELECT gpa F... mobile_app_users_gpa" />
+            <marker date="1519650181149" expanded="true" signature="4146:4239" ph="SELECT modul... mobile_app_details" />
+            <marker date="1519650181149" expanded="true" signature="4606:4648" ph="SELECT COUNT... projects" />
+            <marker date="1519650181149" expanded="true" signature="5071:5136" ph="INSERT INTO projects... " />
+            <marker date="1519650181149" expanded="true" signature="5859:5917" ph="SELECT stat_... mobile_app_users" />
+            <marker date="1519650181149" expanded="true" signature="6258:6305" ph="DELETE FROM " />
+            <marker date="1519650181149" expanded="true" signature="6336:6438" ph="INSERT INTO mobile_app_users... " />
+            <marker date="1519650181149" expanded="true" signature="7064:7115" ph="DELETE FROM " />
+            <marker date="1519650181149" expanded="true" signature="7175:7237" ph="INSERT INTO mobile_app_users_gpa... " />
+            <marker date="1519650181149" expanded="true" signature="7386:7438" ph="DELETE FROM " />
+            <marker date="1519650181149" expanded="true" signature="7542:7618" ph="INSERT INTO mobile_app_users_sgpa... " />
+            <marker date="1519650181149" expanded="true" signature="8268:8372" ph="INSERT INTO mobile_app_details... " />
+            <marker date="1519650181149" expanded="true" signature="8406:8442" ph="INSERT INTO mobile_app_details... " />
+            <marker date="1519650181149" expanded="true" signature="8406:8501" ph="DELETE FROM " />
+            <marker date="1519650181149" expanded="true" signature="8406:8577" ph="INSERT INTO mobile_app_details... " />
+            <marker date="1519650181149" expanded="true" signature="9280:9337" ph="SELECT user_... mobile_app_users" />
+            <marker date="1519650181149" expanded="true" signature="9558:9612" ph="SELECT * FRO... mobile_app_users_sgpa" />
           </folding>
         </state>
       </provider>
